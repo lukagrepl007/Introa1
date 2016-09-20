@@ -1,0 +1,36 @@
+<script>
+    
+    var account = 100;
+    
+    function withDraw(money){
+        account = account - money; 
+        
+    }
+    
+    function deposit(money){
+        
+        
+    }
+    
+    var action = prompt("Do you want to deposit money or withdraw?");
+    //check to which action to execute
+    if ("deposit"){
+        money= prompt("how much?")
+        parseInt(console.log(account + money));
+       
+    }
+    else { money=prompt ("how much?")
+    parseInt( console.log(account - money));
+        }
+        
+        
+        
+       
+       
+        
+
+
+
+
+
+</script>
