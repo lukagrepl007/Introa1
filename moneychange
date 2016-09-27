@@ -1,0 +1,36 @@
+<script>
+// ask user how much the item costs and how much they spend. Then return the amount of change in dollars,quaters, nickles, dimes, and pennies.
+    
+    function pennies (itemCost, amountSpent){
+        
+        var change = amountSpent - itemCost;
+    
+         dollars = Math.floor(change / 1.00)
+         quaters = Math.floor(dollars / 0.25/change)
+         dimes =  Math.floor(quaters /0.10/ change)
+         nickles =  Math.floor(dimes / 0.5/change)
+         pennie = Math.floor(nickles /0.1/change)
+         alert("Your change is" +" " + dollars +" "+"dollars"+" " +  quaters +" "+"quaters" +" "+ dimes +" " +"dimes" +" "+ nickles +" " +"nickles" +" "+ pennie +" "+ "pennie");
+        }
+        
+        var dollars = 1.00 
+        var quaters = 0.25
+        var dimes = 0.10
+        var nickles = 0.5
+        var pennie = 0.1
+        
+        
+        
+        
+        
+        
+    
+    var amount = prompt (" How much does the item cost?");
+      
+    var spent = prompt (" how much did you pay");
+     
+    pennies(amount,spent);
+      
+
+
+</script>
